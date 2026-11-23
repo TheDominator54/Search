@@ -11,6 +11,10 @@ in [ROADMAP.md](ROADMAP.md).
 
 ## Unreleased
 
+### Added
+
+- Settings › Video › Full screen in the window, off unless you turn it on: a video's full screen fills the browser window, which goes into macOS full screen itself, instead of a window and a desktop of WebKit's own beside it. If the window is full screen already, the video just fills it and no desktop is made. Esc, another tab, or the window leaving full screen ends it, and the window goes back as it was. Pages already open take it at once; a player embedded in one follows once the page is reloaded. `python3 Tests/fullscreen_in_window.py` ([#1423](https://github.com/driceroland/Search/issues/1423))
+
 ### Fixed
 
 - With Settings › Spaces & Pins › The field in the middle of the window on, ⌘T's floating field and ⌘L's field over a page have the keys again: typing did nothing until the field was clicked. The page's pane made a field of its own a moment after the window's, which took the keys and went away with them. `python3 Tests/field_window_keys.py` (reported by email, idea 1033)
